@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #222;
+}
+
+.pro-features {
+    position: fixed;
+    right: -30rem;
+    width: 30rem;
+    height: auto;
+    line-height: 3rem;
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1900 - 300)));
+    background: #fff;
+    color: #333;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: -0.5rem 0rem 0.5rem rgba(0, 0, 0, .2);
+    z-index: 99999;
+    padding: 2rem 3rem 3rem;
+    transition: all .4s ease;
+}
+
+.pro-features.active {
+    right: 0;
+}
+
+.pro-features li.title {
+    font-weight: 800;
+    color: orangered;
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1900 - 300)));
+}
+
+.pro-features li {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.pro-features .button .btn {
+    width: 100%;
+    display: block;
+    background-color: orangered;
+    color: #fff;
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 0.8rem;
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1900 - 300)));
+}
+
+.pro-features .button .btn:hover {
+    opacity: 0.8;
+}
+
+.get-pro {
+    position: absolute;
+    left: -8rem;
+    width: 8rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1900 - 300)));
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    background-color: orangered;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    top: 0;
+    cursor: pointer;
+    box-shadow: -0.5rem 0rem 0.5rem rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 440px) {
+    .pro-features {
+        width: 22rem;
+        right: -22rem;
+    }
+}
