@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    padding: 2rem 9%;
+}
+
+.contacts .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: calc(25px + (70 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.contacts .heading span {
+    color: #E8630A;
+}
+
+.contacts .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contacts .row .img {
+    flex: 1 1 40rem;
+}
+
+.contacts .row form {
+    flex: 1 1 40rem;
+}
+
+.contacts .row form .box {
+    width: 100%;
+    margin: 1rem 0rem 2rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+}
+
+.contacts .row form span {
+    color: #fff;
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.contacts .row form .type {
+    margin: 1rem 0rem 2rem;
+}
+
+.contacts .row form .type label {
+    margin-bottom: 0.2rem;
+    font-size: 1.6rem;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.contacts .row form .type #online {
+    margin-left: 2rem;
+}
+
+.contacts .row form .type input {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacts .row form .type input:checked {
+    background-color: #E8630A;
+    border-radius: 50%;
+}
+
+.contacts .row form .type #online:checked~label[for=online] {
+    color: #E8630A;
+}
+
+.contacts .row form .type #online:checked~label[for=onsite] {
+    color: #E8630A;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #E8630A;
+    color: #f2f2f2;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <title>contacts</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class="contacts">
+
+        <h2 class="heading"><span>Contact</span> Us</h2>
+
+        <div class="row">
+
+            <div class="img">
+                <img src="img/Office-PNG-Photo.png">
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="6941f907-cd96-4a89-a678-b25246f8f9de">
+
+                <span>Your Name</span>
+                <input type="text" name="name" id="" class="box" required placeholder="Enter your name.."
+                    autocomplete="off">
+
+                <span>Your Email</span>
+                <input type="email" name="email" id="" class="box" required placeholder="Enter your email.."
+                    autocomplete="off">
+
+                <span>Your Phone</span>
+                <input type="number" name="number" id="" class="box" required placeholder="Enter your phone number.."
+                    autocomplete="off">
+
+                <span>Select Courses</span>
+                <select name="courses" id="" class="box" required>
+                    <option value="" disabled selected>Select Cources</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JS</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                </select>
+
+                <span>Select Type</span>
+                <div class="type">
+                    <input type="radio" name="type" id="onsite" value="onsite">
+                    <label for="onsite">onsite</label>
+
+                    <input type="radio" name="type" id="online" value="online">
+                    <label for="online">online</label>
+                </div>
+
+                <input type="submit" value="Send Message" class="btn" name="send">
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
