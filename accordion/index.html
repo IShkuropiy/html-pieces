@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section>
+
+        <h1 class="title">FAQ's</h1>
+
+        <div class="questions-container">
+
+            <div class="question">
+                <button>
+                    <span>Do you offer subscriptions discount?</span>
+                    <i class="fas fa-chevron-down arrow-down"></i>
+                </button>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem debitis eveniet fugiat eligendi, et
+                    doloremque beatae dolores ducimus reiciendis atque iure ipsam illum fugit aliquid ratione,
+                    reprehenderit harum illo aliquam corporis id. Sapiente amet eos doloribus atque aut velit, dicta
+                    reiciendis repellendus dolore. Laborum praesentium ipsum iusto porro corporis placeat, voluptates
+                    adipisci doloribus ducimus perferendis assumenda odio officia at pariatur asperiores provident
+                    dolorem ex eaque architecto nemo aperiam reiciendis doloremque corrupti. Quae quo minus perferendis
+                    ut. Mollitia, delectus quisquam odio ipsam eaque modi excepturi voluptatum voluptate, fuga nulla
+                    quia. Nobis fugiat suscipit esse deleniti adipisci nesciunt nihil dicta ullam tenetur?
+                </p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>Can I pause or cancel my subscription?</span>
+                    <i class="fas fa-chevron-down arrow-down"></i>
+                </button>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non minima repellat maiores
+                    earum, libero labore quia voluptas facilis voluptatem explicabo natus quas expedita tempora.
+                </p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>Will I be able to easily manage my account?</span>
+                    <i class="fas fa-chevron-down arrow-down"></i>
+                </button>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit quos omnis ipsum
+                    quibusdam architecto facere consequuntur cumque earum eveniet, dolores vero. Rerum, assumenda
+                    recusandae.
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+
+        let buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                let faq = button.nextElementSibling;
+                let icon = button.children[1];
+
+                faq.classList.toggle('active');
+                icon.classList.toggle('rotate');
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

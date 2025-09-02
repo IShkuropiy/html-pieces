@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 249, 249);
+    color: rgb(23, 73, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 5rem 5%;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0rem 0rem 4rem;
+}
+
+.questions-container {
+    max-width: 80rem;
+}
+
+.questions-container .question button {
+    width: 100%;
+    background-color: #fff;
+    color: rgb(23, 73, 77);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 0.1rem 0rem;
+}
+
+.questions-container .question p {
+    font-size: 1.8rem;
+    border: 1px solid #eee;
+    background-color: rgb(248, 249, 249);
+    line-height: 1.5rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.questions-container .question p.active {
+    max-height: 100rem;
+    opacity: 1;
+    padding: 1rem 1.5rem 2rem;
+}
+
+.questions-container .question button .arrow-down.rotate {
+    transform: rotate(180deg);
+}
+
+.questions-container .question button .arrow-down {
+    transition: transform .5s ease-in;
+}
