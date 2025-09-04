@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/places/desert1.jpg) no-repeat center/cover;
+}
+
+#menu {
+    display: none;
+}
+
+label {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background: #662549;
+    border: .1rem solid #fff;
+    text-align: center;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+label .fa-times {
+    display: none;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar ul li {
+    margin: .5rem;
+}
+
+.navbar ul li a {
+    font-size: 3.5rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #662549;
+}
+
+#menu:checked~.navbar {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu:checked~label .fa-bars {
+    display: none;
+}
+
+#menu:checked~label .fa-times {
+    display: block;
+}
