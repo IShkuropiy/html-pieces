@@ -17,7 +17,7 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    background: url(img/places/desert1.jpg) no-repeat center/cover;
+    background: url(desert.jpg) no-repeat center/cover;
 }
 
 #menu {
